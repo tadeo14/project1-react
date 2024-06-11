@@ -3,26 +3,32 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 export const Registro = () => {
-  return (
-    <Form>
+    return (
+        <div>
+            <h1 className="ms-5 py-3">Registro</h1>
+            <Form className="w-25 px-5">
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
+        <Form.Label>Nombre</Form.Label>
+        <Form.Control type="text"  />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
+        <Form.Label>Correo Electronico</Form.Label>
+        <Form.Control type="email"/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Contraseña</Form.Label>
+        <Form.Control type="password"/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Confirmar contraseña</Form.Label>
+        <Form.Control type="password"/>
       </Form.Group>
       <Button variant="primary" type="submit">
-        Submit
+        Registrarse
       </Button>
     </Form>
+      </div>
+    
   )
 }
