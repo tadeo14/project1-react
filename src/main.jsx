@@ -7,6 +7,6 @@ import { Registro } from './componentes/Registro.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Registro/>
+    <App />
   </React.StrictMode>,
 )
